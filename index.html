@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min första webbsida</title>
     <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Story+Script&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Axel Lindgren</h1> 
@@ -13,12 +16,65 @@
     
     
     <h2>Mina intressen</h2>
-    <ul>
-        <li>Titta på fotboll</li>
-         <img src="Bilder/Madrid_CL.jpg" id="real-madrid" alt="En bild på Real Madrid som vinner Champions League 2017">
-        <li>Köra motorcykel</li>
-        <li>Spela dator</li>
-        <li>Umgås med vänner</li>
-    </ul>
+
+<div class="carousel-container">
+  <div class="carousel-slide">
+    <img src="Bilder/Madrid_CL.jpg" alt="Bild på när Real Madrid vinner CL 2017" />
+    <div class="carousel-text">Att kolla fotboll, helst Real Madrid</div>
+  </div>
+  <div class="carousel-slide">
+    <img src="Bilder/z900.webp" alt="Bild på en person som kör MC" />
+    <div class="carousel-text">Att köra MC</div>
+  </div>
+  <div class="carousel-slide">
+    <img src="Bilder/CS.jpg" alt="Counter strike 2 logo" />
+    <div class="carousel-text">Att spela dator</div>
+  </div>
+   <div class="carousel-slide">
+    <img src="Bilder/öl.jpg" alt="Bild på två ölflaskor som skålar" />
+    <div class="carousel-text">Att umgås med vänner</div>
+  </div>
+
+<div class="arrow left" onclick="changeSlide(-1)">&#10094;</div>
+<div class="arrow right" onclick="changeSlide(1)">&#10095;</div>
+</div>
+
+<script src="js/script.js"></script>
+
+<div class="timeline-container">
+  <h2>Mina erfarenheter</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-marker current"></div>
+      <div class="timeline-date">2025 – Pågående</div>
+      <div class="timeline-content">Fullstack JavaScript utbildning – Chas Academy</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-date">2022 – 2025</div>
+      <div class="timeline-content">Process specialist – coeo Inkasso</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-date">Apr 2022 - Dec 2022</div>
+      <div class="timeline-content">Butikssäljare - Telia</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-date">Nov 2021 - Mar 2022</div>
+      <div class="timeline-content">Fibersupport - Teleperformance</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-date">Jun 2020 - Jun 2021</div>
+      <div class="timeline-content">Brevbärare & Paketbilschaufför - PostNord AB</div>
+    </div>
+    
+  </div>
+</div>
+</section>
+
+
+
 </body>
 </html>
