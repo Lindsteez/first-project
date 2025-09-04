@@ -1,8 +1,8 @@
 .carousel-container {
     position: relative;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
-    background: white;
+    background: #333;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: visible;
@@ -22,7 +22,7 @@
 .carousel-text {
     margin-top: 10px;
     font-size: 1.1em;
-    color: #1e1e1e;
+    color: white;
 }
 
 .arrow {
@@ -44,16 +44,32 @@
     right: -40px;
 }
 
-body {
-    background-color: #1e1e1e;
-    /* mörk men inte kolsvart */
-    /* ljus text */
-    text-align: center;
-    font-family: "Oswald";
-    /* Eller något annat: 'Roboto', 'Lato', etc */
-    color: white;
-    /* Du kan ändra färgen också */
+@media screen and (max-width: 600px) {
+  .arrow.left {
+    left: 5px;  /* Flyttar in pilen inom skärmen */
+  }
+  
+  .arrow.right {
+    right: 5px; /* Flyttar in pilen inom skärmen */
+  }
+
+  .arrow {
+    font-size: 1.5em;  /* Mindre pilar på små skärmar */
+    padding: 8px;
+  }
 }
+
+
+body {
+  background-color: #1e1e1e;
+  box-shadow: inset 0 0 200px 100px rgba(255, 255, 255, 0.15);
+  color: white;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin: 0;
+  min-height: 100vh;
+}
+
 
 .timeline-container {
     max-width: 700px;
@@ -138,3 +154,124 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
     max-width: 600px;
 }
+
+.timeline-item {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.timeline-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.timeline-item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.timeline-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.timeline-item:nth-child(4) {
+  transition-delay: 0.1s;
+}
+.timeline-item:nth-child(5) {
+  transition-delay: 0.2s;
+}
+
+/* Mobilanpassning för små skärmar */
+@media screen and (max-width: 600px) {
+  .timeline-container {
+    padding: 0 10px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .timeline {
+    padding-left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 10px;
+    margin-bottom: 40px;
+  }
+
+  .timeline-content {
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .timeline-marker {
+    left: -20px;
+  }
+
+  .timeline-item::after {
+    left: -14px;
+    height: 100px;
+  }
+}
+
+.reasons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Mellanrum mellan boxarna */
+  flex-wrap: wrap; /* Flyttar ner boxar om skärmen blir smal */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flip-box {
+  background-color: #333;
+  width: 180px;
+  height: 200px;
+  perspective: 1000px; /* För 3D-flip */
+  cursor: pointer;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* När du hover eller fokuserar på boxen så flippar den
+.flip-box:hover .flip-box-inner,
+.flip-box:focus .flip-box-inner {
+  transform: rotateY(180deg);
+} */
+
+.flip-box.flipped .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flip-box-front {
+  background-color: #333;
+}
+
+.flip-box-back {
+  background-color: #333;
+  transform: rotateY(180deg);
+  padding: 10px;
+  box-sizing: border-box;
+}
+

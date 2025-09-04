@@ -16,3 +16,20 @@ function changeSlide(n) {
 }
 
 showSlide(slideIndex);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+});
+
+const items = document.querySelectorAll('.timeline-item');
+items.forEach(item => observer.observe(item));
+
+document.querySelectorAll('.flip-box').forEach(box => {
+  box.addEventListener('click', () => {
+    box.classList.toggle('flipped');
+  });
+});
