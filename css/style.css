@@ -1,117 +1,140 @@
-
 .carousel-container {
-  position: relative;
-  max-width: 600px;
-  margin: auto;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  overflow: visible;
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: visible;
 }
 
 .carousel-slide {
-  display: none;
-  padding: 20px;
+    display: none;
+    padding: 20px;
 }
 
 .carousel-slide img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .carousel-text {
-  margin-top: 10px;
-  font-size: 1.1em;
-  color: #1e1e1e;
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #1e1e1e;
 }
 
 .arrow {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 2em;
-  padding: 10px;
-  color: #fcfbfb;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    padding: 10px;
+    color: #fcfbfb;
+    user-select: none;
 }
 
 .arrow.left {
-  left: -40px;
+    left: -40px;
 }
 
 .arrow.right {
-  right: -40px;
+    right: -40px;
 }
 
 body {
-  background-color: #1e1e1e;   /* mörk men inte kolsvart */             /* ljus text */
-  text-align: center;
-  font-family: "Oswald"; /* Eller något annat: 'Roboto', 'Lato', etc */
-  color: white; /* Du kan ändra färgen också */
+    background-color: #1e1e1e;
+    /* mörk men inte kolsvart */
+    /* ljus text */
+    text-align: center;
+    font-family: "Oswald";
+    /* Eller något annat: 'Roboto', 'Lato', etc */
+    color: white;
+    /* Du kan ändra färgen också */
 }
 
 .timeline-container {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 0 15px;
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Centrerar innehållet horisontellt */
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrerar innehållet horisontellt */
 }
 
 .timeline-container h2 {
-  margin-bottom: 50px;
-  font-size: 28px;
-  font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .timeline {
-  position: relative;
-  border-left: 2px solid #555;
-  width: 100%;
-  max-width: 600px; /* Begränsar bredd */
-  padding-left: 30px; /* Plats för cirklar */
+    position: relative;
+    max-width: 600px;
+    padding-left: 30px;
+    padding-top: 7px; 
+    padding-bottom: 7px; 
 }
 
 .timeline-item {
-  position: relative;
-  margin-bottom: 50px;
-  text-align: left;
+    position: relative;
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 28px;
+    width: 2px;
+    height: 110px;
+    background-color: #555;
+    z-index: 0;
+}
+
+.timeline-item.last::after {
+    display: none;
 }
 
 .timeline-marker {
-  width: 14px;
-  height: 14px;
-  background-color: gray;       /* Eller transparent om du inte vill ha fler */
-  border-radius: 50%;
-  position: absolute;
-  left: -38px;
-  top: 5px;
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.1); /* Svag glow */
+    width: 14px;
+    height: 14px;
+    background-color: gray;
+    /* Eller transparent om du inte vill ha fler */
+    border-radius: 50%;
+    position: absolute;
+    left: -36px;
+    top: 14px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+    /* Svag glow */
 }
 
 .timeline-marker.current {
-  background-color: #4caf50;
-  box-shadow: 0 0 8px 2px rgba(76, 175, 80, 0.9); /* Starkare grön glow */
+    background-color: #4caf50;
+    box-shadow: 0 0 8px 2px rgba(76, 175, 80, 0.9);
+    /* Starkare grön glow */
 }
 
 .timeline-date {
-  font-size: 14px;
-  color: #999;
-  margin-bottom: 8px;
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 8px;
 }
 
 .timeline-content {
-  display: inline-block;
-  background-color: #333;
-  padding: 15px 20px;
-  border-radius: 8px;
-  font-weight: bold;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
-  max-width: 600px;
+    display: inline-block;
+    background-color: #333;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
 }
