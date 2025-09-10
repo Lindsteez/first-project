@@ -4,8 +4,7 @@ Det här är mitt första webbutvecklingsprojekt, där jag byggt en personlig po
 
 ## 🚀 Demo
 
-[📎 Se sidan live (om publicerad med GitHub Pages)](https://lindsteez.github.io/first-project/)  
-*(Lägg till länken när du publicerat den)*
+[📎 Se sidan live](https://lindsteez.github.io/first-project/)
 
 ## 🛠️ Funktioner
 
