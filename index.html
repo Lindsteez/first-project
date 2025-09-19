@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Min första webbsida</title>
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Story+Script&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Story+Script&display=swap"
+      media="print"
+      onload="this.onload=null;this.media='all';"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Story+Script&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <div class="page-wrapper">
@@ -30,22 +36,39 @@
 
         <div class="carousel-container">
           <div class="carousel-slide">
-            <img
-              src="Bilder/Madrid_CL.jpg"
-              alt="Bild på när Real Madrid vinner CL 2017"
-            />
-            <div class="carousel-text">Kolla fotboll, helst Real Madrid</div>
+            <picture>
+              <source
+                srcset="Bilder/Madrid_CLmobil.jpg"
+                media="(max-width: 600px)"
+              />
+              <img
+                src="Bilder/Madrid_CL2.jpg"
+                alt="Bild på när Real Madrid vinner CL 2017"
+              />
+            </picture>
           </div>
           <div class="carousel-slide">
-            <img src="Bilder/z900.webp" alt="Bild på en person som kör MC" />
+            <img
+              src="Bilder/z900.webp"
+              loading="lazy"
+              alt="Bild på en person som kör MC"
+            />
             <div class="carousel-text">Köra MC</div>
           </div>
           <div class="carousel-slide">
-            <img src="Bilder/CS.jpg" alt="Counter strike 2 logo" />
+            <img
+              src="Bilder/CS.jpg"
+              loading="lazy"
+              alt="Counter strike 2 logo"
+            />
             <div class="carousel-text">Spela dator</div>
           </div>
           <div class="carousel-slide">
-            <img src="Bilder/öl.jpg" alt="Bild på två ölflaskor som skålar" />
+            <img
+              src="Bilder/öl.jpg"
+              loading="lazy"
+              alt="Bild på två ölflaskor som skålar"
+            />
             <div class="carousel-text">Umgås med vänner</div>
           </div>
 
@@ -218,6 +241,8 @@
     </div>
 
     <footer class="footer">&copy; Axel Lindgren</footer>
+
+    <button id="scrollTopBtn" title="Till toppen">↑</button>
 
     <script src="js/script.js"></script>
   </body>
