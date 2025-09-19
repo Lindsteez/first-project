@@ -20,13 +20,17 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <header>
+      <header class="header-text">
         <h1>Axel Lindgren</h1>
-
         <p>
-          Mitt namn är Axel Lindgren. Jag är 26 år, född och uppvuxen i
-          Halmstad. För ca 1 år sedan flyttade jag till Malmö, och nu ska jag
-          börja studera javascript.
+          Mitt namn är Axel Lindgren och jag är 26 år gammal. Jag är född och
+          uppvuxen i Halmstad, men flyttade till Malmö för ungefär ett år sedan.
+          Efter flera år inom kundservice och processhantering kände jag att det
+          var dags att satsa på något nytt, något jag verkligen brinner för.
+          Idag studerar jag till Fullstack JavaScript‑utvecklare på Chas
+          Academy, där jag får kombinera logiskt tänkande med kreativt skapande.
+          Den här sidan är mitt allra första portfolio-projekt. Den kommer
+          utvecklas med tiden, precis som jag!
         </p>
       </header>
 
@@ -46,6 +50,9 @@
                 alt="Bild på när Real Madrid vinner CL 2017"
               />
             </picture>
+            <div class="carousel-text">
+              Titta på fotboll, helst Real Madrid!
+            </div>
           </div>
           <div class="carousel-slide">
             <img
@@ -53,16 +60,16 @@
               loading="lazy"
               alt="Bild på en person som kör MC"
             />
-            <div class="carousel-text">Köra MC</div>
+            <div class="carousel-text">Köra motorcykel</div>
           </div>
-          <div class="carousel-slide">
+          <!-- <div class="carousel-slide">
             <img
               src="Bilder/CS.jpg"
               loading="lazy"
               alt="Counter strike 2 logo"
             />
             <div class="carousel-text">Spela dator</div>
-          </div>
+          </div> -->
           <div class="carousel-slide">
             <img
               src="Bilder/öl.jpg"
@@ -93,10 +100,22 @@
             <div class="timeline-item">
               <div class="timeline-marker"></div>
               <div class="timeline-line"></div>
-              <div class="timeline-date">2022 – 2025</div>
+              <div class="timeline-date">Jan 2024 – Aug 2025</div>
               <div class="timeline-content">
                 Process specialist – coeo Inkasso
               </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-line"></div>
+              <div class="timeline-date">Okt 2023 – Dec 2023</div>
+              <div class="timeline-content">Superuser – coeo Inkasso</div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-line"></div>
+              <div class="timeline-date">Dec 2022 – Okt 2023</div>
+              <div class="timeline-content">Rådgivare – coeo Inkasso</div>
             </div>
             <div class="timeline-item">
               <div class="timeline-marker"></div>
@@ -123,7 +142,7 @@
 
       <!-- <Boxarna med text av anledningar>  -->
       <section>
-        <h1>Varför valde jag att utbilda mig till Fullstack Javascript?</h1>
+        <h2>Varför valde jag att utbilda mig till Fullstack Javascript?</h2>
         <div class="reasons-container">
           <div class="flip-box" tabindex="0">
             <div class="flip-box-inner">
@@ -202,7 +221,7 @@
         <h2>Företag i Malmö som jobbar med HTML, CSS och JavaScript</h2>
         <div class="companies-grid">
           <div class="company-card">
-            <h3>Capgemini</h3>
+            <h3><strong>Capgemini</strong></h3>
             <p>
               Konsultbolag som jobbar med hela JavaScript-stack: React, Vue,
               Node.js.
@@ -211,7 +230,7 @@
           </div>
 
           <div class="company-card">
-            <h3>AFRY</h3>
+            <h3><strong>AFRY</strong></h3>
             <p>
               Teknikkonsulter som arbetar med TypeScript, Node.js och moderna
               webblösningar.
@@ -220,7 +239,7 @@
           </div>
 
           <div class="company-card">
-            <h3>GleSYS</h3>
+            <h3><strong>GleSYS</strong></h3>
             <p>
               Techföretag som bl.a kombinerar frontendutveckling med modern
               JavaScript (ES6+), responsiv design och UI/UX‑arbete.
@@ -229,7 +248,7 @@
           </div>
 
           <div class="company-card">
-            <h3>Intervaro</h3>
+            <h3><strong>Intervaro</strong></h3>
             <p>
               Digitalbyrå med fokus på e‑handel, webbplatser och digitala
               produkter; kombinerar design och frontend/UX.
@@ -240,7 +259,16 @@
       </section>
     </div>
 
-    <footer class="footer">&copy; Axel Lindgren</footer>
+    <footer class="footer">
+      &copy; Axel Lindgren &nbsp;| &nbsp;
+      <a
+        href="https://www.linkedin.com/in/axel-lindgren-a26264244/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+    </footer>
 
     <button id="scrollTopBtn" title="Till toppen">↑</button>
 
