@@ -227,7 +227,6 @@ body {
 }
 
 .flip-box {
-  background-color: #333;
   width: 180px;
   height: 200px;
   perspective: 1000px; /* För 3D-flip */
@@ -296,9 +295,32 @@ body {
 
 .company-card h3 {
   text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
 }
 
 .company-card a {
   color: #4caf50;
   text-decoration: none;
+}
+
+.companies-section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.company-card {
+    background-color: #333;
+    padding-top: 2px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    margin: 10px;
 }
