@@ -25,6 +25,10 @@ Projektet är även ett sätt att börja arbeta med moderna webbutvecklingsprinc
 
 ⚡ Prestandaoptimerad – 100/100 i Lighthouse Mobile Performance
 
+🌓 Dark/light mode
+
+✉️ Kontaktformulär m
+
 ## 🧰 Tekniker
 
 🧱 HTML5
@@ -57,10 +61,6 @@ Betydelsen av tillgänglighetsanpassningar som alt-texter och tangentbordsnaviga
 
 ## 🧪 Kommande förbättringar (idéer)
 
-🌓 Dark/light mode
-
 🌐 Flerspråkigt stöd (svenska/engelska)
-
-✉️ Kontaktformulär med validering
 
 📁 Konvertering till React-komponenter på sikt
