@@ -1,3 +1,25 @@
+// script för darkmode
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("themeToggle");
+
+  if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light-mode");
+    toggleBtn.textContent = "☀️";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+
+    if (document.body.classList.contains("light-mode")) {
+      toggleBtn.textContent = "☀️";
+      localStorage.setItem("theme", "light");
+    } else {
+      toggleBtn.textContent = "🌙";
+      localStorage.setItem("theme", "dark");
+    }
+  });
+});
+
 let slideIndex = 0;
 const slides = document.getElementsByClassName("carousel-slide");
 
