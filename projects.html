@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mina projekt – Axel Lindgren</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Navigering -->
+    <header>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <a href="index.html">Startsida</a>
+          <a href="projects.html">Mina projekt</a>
+          <a href="contact.html">Kontakta mig</a>
+        </ul>
+        <button id="themeToggle">🌙</button>
+      </nav>
+    </header>
+
+    <!-- Huvudinnehåll -->
+    <main>
+      <section class="project-section">
+        <h1>Mina projekt</h1>
+        <p class="intro-text">
+          Här hittar du några av mina egna JavaScript-projekt. Varje projekt har
+          en live-demo och en länk till koden på GitHub.
+        </p>
+
+        <div class="project-grid">
+          <!-- 🔹 To-Do App -->
+          <div class="project-card">
+            <h2>📝 To-Do App</h2>
+            <p>
+              En enkel uppgiftshanterare byggd i ren HTML, CSS och JavaScript.
+              Uppgifterna sparas lokalt i webbläsaren via
+              <code>localStorage</code>.
+            </p>
+            <img src="Bilder/todo app.png" alt="To-Do App förhandsvisning" />
+            <div class="buttons">
+              <a
+                href="https://lindsteez.github.io/To-do-app/"
+                target="_blank"
+                class="btn"
+                >🔗 Live-demo</a
+              >
+              <a
+                href="https://github.com/Lindsteez/To-do-app"
+                target="_blank"
+                class="btn"
+                >💻 GitHub</a
+              >
+            </div>
+          </div>
+
+          <!-- 🔹 Kommande projekt -->
+          <div class="project-card">
+            <!-- <img src="images/weather-preview.png" alt="Väderapp förhandsvisning" /> -->
+            <h2>(Kommande)🌦️ Väderapp</h2>
+            <p>
+              En app som hämtar data från OpenWeatherMap API och visar aktuellt
+              väder i valfri stad.
+            </p>
+            <!-- <div class="buttons">
+              <a href="#" class="btn disabled">🔗 Kommer snart</a>
+              <a href="#" class="btn secondary disabled">💻 GitHub</a>
+            </div> -->
+          </div>
+
+          <div class="project-card">
+            <!-- <img src="images/quiz-preview.png" alt="Quiz App förhandsvisning" /> -->
+            <h2>(Kommande)🧠 Quiz App</h2>
+            <p>
+              Ett flervalsquiz där användaren får poäng baserat på rätt svar.
+              Frågorna laddas från en JSON-fil.
+            </p>
+            <!-- <div class="buttons">
+              <a href="#" class="btn disabled">🔗 Kommer snart</a>
+              <a href="#" class="btn secondary disabled">💻 GitHub</a>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      &copy; Axel Lindgren &nbsp;| &nbsp;
+      <a
+        href="https://www.linkedin.com/in/axel-lindgren-a26264244/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+      &nbsp;| &nbsp;
+      <a
+        href="https://github.com/Lindsteez"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Github
+      </a>
+    </footer>
+  </body>
+</html>
